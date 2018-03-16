@@ -1,4 +1,28 @@
-# MarvelHeroes
+# Marvel Heroes
+
+## Step #1: Install npm
+
+npm is installed with Node.js
+npm is distributed with Node.js- which means that when you download Node.js, you automatically get npm installed on your computer.
+
+### Check that you have node and npm installed
+To check if you have Node.js installed, run this command in your terminal: `node -v`
+
+To confirm that you have npm installed you can run this command in your terminal: `npm -v`
+
+### If you don't have them, go here for download it: https://nodejs.org/en/
+
+## Step #2: Download project
+
+Press shift+right click on any folder where your want to install project and choose "Open Command Window Here" or "Git Bash here" if you have Git Bash and type in command line: `git clone https://github.com/WhiteEnvy/MarvelHeroes.git`
+
+Or just download zip with project and extract it in any folder
+
+## Step #3: Install npm packages
+
+type: `npm install`
+
+## Step #4: Work with project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
@@ -17,10 +41,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
 
