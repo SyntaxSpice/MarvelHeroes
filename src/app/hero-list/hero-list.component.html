@@ -1,0 +1,17 @@
+<div class="col-sm-6 col-sm-offset-3">
+    <nav class="nav-wraper">
+        <button (click)="showAllHeroes(false)" [ngClass]="{'red': !shownState.isFavoritesShown}">All
+            <div class="mask"></div>
+        </button>
+        <button (click)="showFavoriteHeroes(true)" [ngClass]="{'red': shownState.isFavoritesShown}" [disabled]="favoriteHeroes.length == 0">Favorite
+            <div class="mask"></div>
+        </button>
+    </nav>
+    <div *ngIf="!shownState.isFavoritesShown" class="heroes-wrapper">
+        <hero *ngFor="let hero of allHeroes | paginate: {itemsPerPage: 20, currentPage: p}" [hero]="hero"></hero>
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+    </div>
+    <div *ngIf="shownState.isFavoritesShown" class="heroes-wrapper">
+        <hero *ngFor="let hero of favoriteHeroes" [hero]="hero"></hero>
+    </div>
+</div>

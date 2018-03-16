@@ -1,0 +1,61 @@
+.heroName{
+    transition: .5s;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.img-wrapper {
+    display: inline;
+    margin: 0 auto;
+}
+
+.img-wrapper img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 1s;
+    margin-bottom: 15px;
+}
+
+.no-rounded {
+    width: 150px!important;
+    height: 225px!important;
+    border-radius: 0%!important;
+}
+
+button{
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.hero-wrapper{
+    color: #717171;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .5s;
+    background-color: rgb(20, 20, 20);
+    box-shadow: 0 0 4px .8px black;
+}
+
+
+
+.red:hover{
+    background-color:  rgb(186, 15, 15);
+}
+
+.red:hover .heroName{
+    color: white;
+}
+
+.details{
+    text-align: justify
+}

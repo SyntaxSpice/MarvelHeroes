@@ -1,0 +1,28 @@
+.main-app{
+    height: 100%;
+    padding: 0;
+}
+
+.center { 
+    height: 100%;
+    position: relative;
+}
+
+.center img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header{
+    height: 300px;
+    background-image: url("../assets/img/header7.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    box-shadow: 0 0 10px 2px black;
+}
+
+

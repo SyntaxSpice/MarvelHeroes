@@ -1,0 +1,43 @@
+:host /deep/ .ngx-pagination a, .ngx-pagination button{
+	color: #cacaca!important;
+	color: #000000!important;
+}
+
+:host /deep/ .ngx-pagination .current{
+	background: #e21111!important;
+	color: #000000!important
+}
+
+:host /deep/ .ngx-pagination a:hover, .ngx-pagination button:hover{
+	/* color: #000000!important */
+	background: #000000!important;
+	color: #cacaca!important
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(#000 0%, #121212 100%);
+}
+
+.center-wrap {
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 125px);
+	width: 250px;
+	height: 200px;
+}
+
+button{
+	color: black;
+}
+
+button:hover{
+	border: 2px solid red;
+}
+
+.red{
+	color: rgb(198, 25, 25);
+}

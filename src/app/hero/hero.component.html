@@ -1,0 +1,32 @@
+<div class="row hero-wrapper" (click)="showFullInfo()" [ngClass]="{'red': !showDetails}">
+    <div class="img-wrapper">
+        <img [src]="hero.thumbnail" class="rounded" [ngClass]="{'no-rounded': showDetails}">
+    </div>
+
+    <h3 class="heroName">{{hero.name}}</h3>
+
+    <div *ngIf="showDetails" class="details">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="col-sm-3">Description</td>
+                    <td> {{hero.description}}</td>
+                </tr>
+                <tr>
+                    <td>Available comics</td>
+                    <td>{{hero.availableComics}}</td>
+                </tr>
+                <tr *ngIf="hero.availableComics">
+                    <td>First Comics</td>
+                    <td>
+                        <p *ngFor="let comicsName of hero.comicsNames">{{comicsName}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button [disabled]="!hero.isFavorite && favoriteHeroes.length == maxFavoriteHeroes" (click)="toggleFavorite()">
+            {{hero.isFavorite ? "UnLink" : "Link"}} as favorite
+            <div class="mask"></div>
+        </button>
+    </div>
+</div>
