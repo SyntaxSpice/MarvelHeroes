@@ -10,7 +10,7 @@ To check if you have Node.js installed, run this command in your terminal: `node
 
 To confirm that you have npm installed you can run this command in your terminal: `npm -v`
 
-### If you don't have them, go here for download it: https://nodejs.org/en/
+If you don't have them, go here for download it: https://nodejs.org/en/
 
 ## Step #2: Download project
 
@@ -20,7 +20,7 @@ Or just download zip with project and extract it in any folder
 
 ## Step #3: Install npm packages
 
-type: `npm install`
+Open command line for project folder and type: `npm install`
 
 ## Step #4: Work with project
 
