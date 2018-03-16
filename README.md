@@ -14,7 +14,7 @@ To confirm that you have npm installed you can run this command in your terminal
 
 ## Step #2: Download project
 
-Press shift+right click on any folder where your want to install project and choose "Open Command Window Here" or "Git Bash here" if you have Git Bash and type in command line: `git clone https://github.com/WhiteEnvy/MarvelHeroes.git`
+Open command line for project folder and type: `git clone https://github.com/WhiteEnvy/MarvelHeroes.git`
 
 Or just download zip with project and extract it in any folder
 
@@ -28,7 +28,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` or `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Running unit tests
+
+Run `npm test` or `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Code scaffolding
 
@@ -37,10 +41,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 
